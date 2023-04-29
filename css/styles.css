@@ -1,5 +1,12 @@
 :root {
     --accent-color: #404BBF;
+    --dark-theme-section-background-color: #2E2F42;
+    --light-theme-section-background-color: #FFFFFF;
+    --logo-web-color: #4D5AE5;
+    --logo-secondary-color-theme-light: #2E2F42;
+    --menu-link-color: #2E2F42;
+    --description-text-color: #434455;
+    ;
 }
 
 .list {
@@ -17,7 +24,8 @@ button {
 
 body {
     font-family: 'Roboto', sans-serif;
-    color: #2E2F42;
+    color: #434455;
+    background-color: var(--light-theme-section-background-color);
 }
 
 
@@ -32,8 +40,16 @@ body {
     text-transform: uppercase;
 }
 
-.logo-web {
-    color: #4D5AE5;
+.logo-web-color {
+    color: var(--logo-web-color);
+}
+
+.logo-secondary-color-theme-light {
+    color: var(--logo-secondary-color-theme-light);
+}
+
+.logo-sendary-color-theme-dark {
+    color: #F4F4FD;
 }
 
 .menu-link {
@@ -41,10 +57,10 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    color: var(--menu-link-color);
 }
 
 .contact-mail {
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -53,7 +69,6 @@ body {
 }
 
 .contact-tel {
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -117,13 +132,14 @@ body {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    color: var(--menu-link-color);
 }
 
 .description {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--description-text-color);
 }
 
 
@@ -135,6 +151,7 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    color: #2E2F42;
 }
 
 .footer-description {
@@ -142,4 +159,24 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #F4F4FD;
+}
+
+.hero-section {
+    background-color: var(--dark-theme-section-background-color);
+}
+
+.footer-styles {
+    background-color: var(--dark-theme-section-background-color);
+}
+
+.team-section {
+    background-color: #F4F4FD;
+}
+
+.header-addres {
+    font-style: normal;
+}
+
+.team-list {
+    background-color: #FFFFFF;
 }
